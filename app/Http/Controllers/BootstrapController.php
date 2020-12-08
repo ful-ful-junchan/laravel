@@ -9,7 +9,7 @@ use Illuminate\Routing\Controller as BaseController;
 
 class BootstrapController extends BaseController
 {
-    public function parts($name)
+    public function show($name)
     {
         return view('bootstrap.'.$name);
     }
