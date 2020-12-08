@@ -2,6 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
+/**
+ * Use Controller
+ */
+use App\Http\Controllers\BootstrapController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +21,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/bootstrap/{name}', [BootstrapController::class, 'show']);
+
