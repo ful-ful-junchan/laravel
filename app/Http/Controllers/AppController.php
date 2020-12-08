@@ -6,9 +6,8 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
-use Auth;
 
-class AppController extends BaseController
+abstract class AppController extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
@@ -24,7 +23,7 @@ class AppController extends BaseController
     /**
      * コンストラクタ
      */
-    public function __constractor()
+    public function __construct()
     {
         // ログインしているか
         if ($this->isAuthorized()) redirect()->route('auth/login');
