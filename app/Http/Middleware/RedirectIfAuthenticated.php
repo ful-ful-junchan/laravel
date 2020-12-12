@@ -5,7 +5,8 @@ namespace App\Http\Middleware;
 use App\Providers\RouteServiceProvider;
 use Closure;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
+// use Illuminate\Support\Facades\Auth;
+use Cartalyst\Sentinel as Auth;
 
 class RedirectIfAuthenticated
 {

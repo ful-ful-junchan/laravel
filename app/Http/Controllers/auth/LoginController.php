@@ -1,10 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Auth;
 
-use Auth;
+use App\Http\Controllers\AppController;
 
-class Controller extends AppController
+class LoginController extends AppController
 {
-
+    public function index()
+    {
+        return $this->render();
+    }
 }

@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Route;
  * Use Controller
  */
 use App\Http\Controllers\BootstrapController;
+use App\Http\Controllers\MypageController;
+use App\Http\Controllers\Auth\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,10 +19,14 @@ use App\Http\Controllers\BootstrapController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// サンプル
+Route::get('/bootstrap/{name}', [BootstrapController::class, 'index']);
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// ルート
+Route::get('/', [MypageController::class, 'index']);
 
-Route::get('/bootstrap/{name}', [BootstrapController::class, 'show']);
+// マイページ
+Route::get('/mypage', [MypageController::class, 'index']);
 
+// ログイン
+Route::get('/login', [LoginController::class, 'index']);

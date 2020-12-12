@@ -1,12 +1,12 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => 'v8.4.4',
-    'version' => '8.4.4.0',
+    'pretty_version' => 'dev-develop',
+    'version' => 'dev-develop',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => 'd4bd2ba040134c25ec9a9d6564c011ea426ba7e0',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -28,6 +28,24 @@
       array (
       ),
       'reference' => '283a40c901101e66de7061bd359252c013dcc43c',
+    ),
+    'cartalyst/sentinel' => 
+    array (
+      'pretty_version' => 'v5.0.0',
+      'version' => '5.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9f7a8c6c27e00a5601c3f78e381cd4dcfee84321',
+    ),
+    'cartalyst/support' => 
+    array (
+      'pretty_version' => 'v5.0.0',
+      'version' => '5.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '976ea71efab17c8d50a485c8db9db0de5b49b3a5',
     ),
     'cordoval/hamcrest-php' => 
     array (
@@ -440,12 +458,12 @@
     ),
     'laravel/laravel' => 
     array (
-      'pretty_version' => 'v8.4.4',
-      'version' => '8.4.4.0',
+      'pretty_version' => 'dev-develop',
+      'version' => 'dev-develop',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => 'd4bd2ba040134c25ec9a9d6564c011ea426ba7e0',
     ),
     'laravel/tinker' => 
     array (
@@ -751,8 +769,8 @@
     array (
       'provided' => 
       array (
-        0 => '1.0',
-        1 => '1.0.0',
+        0 => '1.0.0',
+        1 => '1.0',
       ),
     ),
     'psr/simple-cache' => 
