@@ -1125,6 +1125,14 @@ class Blueprint
     }
 
     /**
+     * ソフトデリート
+     */
+    public function softDelete()
+    {
+        $this->integer('soft_delete', 0)->nullable();
+    }
+
+    /**
      * Add a "deleted at" timestamp for the table.
      *
      * @param  string  $column
